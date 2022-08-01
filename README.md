@@ -4,7 +4,6 @@
 卡通头像制作者 avatarmaker.luhui.net
 
 
-总计55个文件，10个文件
 
 
 主域 Primary domain
@@ -20,6 +19,13 @@ https://avatarmakers.netlify.app/
 
 
 
+## 鲁虺卡通头像设计绘制展示
+![鲁虺卡通头像设计](http://avatarmaker.luhui.net/鲁虺卡通头像设计avatarmaker.luhui.net截图_20220801074726.jpg)
+
+
+
+## 鲁虺卡通头像设计绘制展示
+![鲁虺卡通头像设计](http://avatarmaker.luhui.net/鲁虺卡通头像设计avatarmaker.luhui.net截图_20220801074753.jpg)
 
 
 
