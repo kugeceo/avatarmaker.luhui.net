@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>luhui Avatar Maker - Create your own avatar online</title>
+  <link rel="preload" href="./fonts/Avenir%20Next%20Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/Avenir%20Next%20Heavy.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/Avenir%20Next%20Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="msapplication-TileColor" content="#F8F8F8" />
+  <meta name="theme-color" content="#F8F8F8" />
+  <meta property="og:url" content="http://php.luhui.net">
+  <meta name="title" content="Avatar Maker">
+  <meta property="og:title" content="Avatar Maker">
+  <meta itemprop="name" content="luhui Avatar Maker" />
+  <meta itemprop="title" content="luhui Avatar Maker" />
+  <meta name="description" content="Create your own free avatar in 4 different styles. You can save it as a scalable SVG image or in the more common PNG format.">
+  <meta property="og:description" content="Create your own free avatar online and share it with your friends!">
+  <meta itemprop="description" content="Create your own free avatar online and share it with your friends!">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:image" content="share1200x630.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image" content="share600x600.png">
+  <meta property="og:image:width" content="600">
+  <meta property="og:image:height" content="600">
+  <meta itemprop="image" content="share600x600.png">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles/css/style.min.css?new1">
+  <style>
+    .ht {
+      margin: 0 auto 2em auto;
+      width: calc(100% - 40px);
+      max-width: 970px;
+      max-height: 100px;
+      height: 100%;
+      flex-shrink: 0;
+      overflow: hidden;
+    }
+
+    .hb {
+      margin: 2em auto 0 auto;
+      width: calc(100% - 40px);
+      max-width: 728px;
+      max-height: 188px;
+      height: 100%;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+
+<body class="page page_oh page_white">
+  <svg style="position:absolute;height: 0;width: 0;overflow: hidden;">
+    <defs>
+      <!-- 51 51 -->
+      <g id="color">
+        <g clip-path="url(#clip0)">
+          <rect x="0.937988" y="0.44751" width="50" height="50" rx="25" fill="white" />
+          <circle cx="4.5625" cy="12.8574" r="30" fill="url(#paint0_radial)" />
+          <circle cx="25.938" cy="50.4475" r="30" fill="url(#paint1_radial)" />
+          <circle cx="47.5039" cy="12.8574" r="30" fill="url(#paint2_radial)" />
+          <circle cx="25.938" cy="1.34961" r="30" fill="url(#paint3_radial)" />
+          <circle cx="4.5625" cy="37.884" r="30" fill="url(#paint4_radial)" />
+          <circle cx="47.5039" cy="37.884" r="30" fill="url(#paint5_radial)" />
+        </g>
+      </g>
+      <radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+        gradientTransform="translate(4.5625 12.8574) rotate(90) scale(30)">
+        <stop stop-color="#F41717" />
+        <stop offset="1" stop-color="#FD1F20" stop-opacity="0" />
+      </radialGradient>
+      <radialGradient id="paint1_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+        gradientTransform="translate(25.938 50.4475) rotate(90) scale(30)">
+        <stop stop-color="#17F417" />
+        <stop offset="1" stop-color="#1FFD1F" stop-opacity="0" />
+      </radialGradient>
+      <radialGradient id="paint2_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+        gradientTransform="translate(47.5039 12.8574) rotate(90) scale(30)">
+        <stop stop-color="#1717F4" />
+        <stop offset="1" stop-color="#1F1FFD" stop-opacity="0" />
+      </radialGradient>
+      <radialGradient id="paint3_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+        gradientTransform="translate(25.938 1.34961) rotate(90) scale(30)">
+        <stop stop-color="#F417F4" />
+        <stop offset="1" stop-color="#FD1FFD" stop-opacity="0" />
+      </radialGradient>
+      <radialGradient id="paint4_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+        gradientTransform="translate(4.5625 37.884) rotate(90) scale(30)">
+        <stop stop-color="#F4F417" />
+        <stop offset="1" stop-color="#FDFD1F" stop-opacity="0" />
+      </radialGradient>
+      <radialGradient id="paint5_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+        gradientTransform="translate(47.5039 37.884) rotate(90) scale(30)">
+        <stop stop-color="#17F4F4" />
+        <stop offset="1" stop-color="#1FFDFD" stop-opacity="0" />
+      </radialGradient>
+      <clipPath id="clip0">
+        <rect x="0.937988" y="0.44751" width="50" height="50" rx="25" fill="white" />
+      </clipPath>
+      <linearGradient x1="8.042%" y1="0%" x2="65.682%" y2="23.865%" id="a">
+        <stop stop-color="#c4c4c4" stop-opacity="0" offset="0%"></stop>
+        <stop stop-color="#c4c4c4" offset="100%"></stop>
+      </linearGradient>
+      <linearGradient x1="8.042%" y1="0%" x2="65.682%" y2="23.865%" id="b">
+        <stop stop-color="#ffffff" stop-opacity="0" offset="0%"></stop>
+        <stop stop-color="#ffffff" offset="100%"></stop>
+      </linearGradient>
+      <!-- 38 38 -->
+      <g id="loader">
+        <path d="M36 18c0-9.94-8.06-18-18-18" id="Oval-2" stroke="url(#a)" stroke-width="4" fill="none"
+          stroke-linecap="round"></path>
+        <path d="M36 18c0-9.94-8.06-18-18-18" id="Oval-2" stroke="url(#a)" stroke-width="4" fill="none"
+          stroke-linecap="round" transform="rotate(180 18 18)"></path>
+      </g>
+      <!-- 38 38 -->
+      <g id="pinloader">
+        <path d="M36 18c0-9.94-8.06-18-18-18" id="Oval-2" stroke="url(#b)" stroke-width="4" fill="none"
+          stroke-linecap="round"></path>
+        <path d="M36 18c0-9.94-8.06-18-18-18" id="Oval-2" stroke="url(#b)" stroke-width="4" fill="none"
+          stroke-linecap="round" transform="rotate(180 18 18)"></path>
+      </g>
+    </defs>
+  </svg>
+  <div class="ht" style="max-width: 728px;">
+  
+  
+<script type="text/javascript" src="./scripts/topad.js"></script>
+
+
+  </div>
+  <main class="page__inner">
+    <article class="start page__start">
+      <div class="container start__container">
+        <div class="row start__row">
+          <div class="col col_v_c col_h_fe start__col m-hidden mp-hidden">
+            <button class="start-image start__image start-image_mt" data-gender="male" aria-label="Select male">
+              <picture>
+                <source srcset="images/m.webp 1x, images/m2.webp 2x" type="image/webp" media="(min-width:768px)">
+                <source srcset="images/m.png 1x, images/m2.png 2x" type="image/png" media="(min-width:768px)">
+                <source srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                  type="image/gif" media="(max-width:767px)">
+                <img src="images/m2.png" class="start-image__image start-image__image_m m-hidden mp-hidden" alt=""
+                  width="275" height="316">
+              </picture>
+            </button>
+          </div>
+          <div class="col col_column col_v_c col_h_c start__col col_pad">
+            <div class="start-logo start__logo">
+              <svg class="start-logo__top" width="254" height="72" viewbox="0 0 254 72">
+                <use xlink:href="images/sprites-logo.svg#logo-free"></use>
+              </svg>
+              <svg id="logoStart" class="start-logo__base" width="201" height="136" viewbox="0 0 201 136">
+                <use xlink:href="images/sprites-logo.svg#logo-base"></use>
+              </svg>
+              <p class="start-logo__text">
+                <nobr>
+                  Welcome to&nbsp;luhui Avatar Maker!
+                </nobr> <br />
+                <nobr>
+                  Create your own avatar for free
+                </nobr> <br />
+                <nobr>
+                  in 4 different styles
+                </nobr>
+              </p>
+            </div>
+            <div class="start-images d-hidden">
+              <button class="start-image start-images__image" data-gender="male" aria-label="Select male">
+                <picture>
+                  <source srcset="images/mm.webp 1x, images/mm2.webp 2x" type="image/webp" media="(max-width:767px)">
+                  <source srcset="images/mm.png 1x, images/mm2.png 2x" type="image/png" media="(max-width:767px)">
+                  <source srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    type="image/gif" media="(min-width:768px)">
+                  <img src="images/mm.png" class="start-image__image start-image__image_m" alt="" width="132"
+                    height="152">
+                </picture>
+                <svg class="start-image__go start-image__go_m d-hidden" width="51" height="51" viewbox="0 0 51 51">
+                  <use xlink:href="images/sprites-logo.svg#start-mobile-go"></use>
+                </svg>
+              </button>
+              <button class="start-image start-images__image" data-gender="female" aria-label="Select female">
+                <picture>
+                  <source srcset="images/fm.webp 1x, images/fm2.webp 2x" type="image/webp" media="(max-width:767px)">
+                  <source srcset="images/fm.png 1x, images/fm2.png 2x" type="image/png" media="(max-width:767px)">
+                  <source srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    type="image/gif" media="(min-width:768px)">
+                  <img src="images/fm.png" class="start-image__image start-image__image_f" alt="" width="132"
+                    height="160">
+                </picture>
+                <svg class="start-image__go start-image__go_f d-hidden" width="51" height="51" viewbox="0 0 51 51">
+                  <use xlink:href="images/sprites-logo.svg#start-mobile-go"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="start-arrows start__arrows">
+              <div class="start-arrows__content">
+                <p class="start__title">Select gender</p>
+                <p class="start__text">Please select a&nbsp;gender <br />by clicking on&nbsp;the image</p>
+                <svg class="start-arrows__arrow start-arrows__arrow_left m-hidden mp-hidden" width="122" height="41"
+                  viewbox="0 0 122 41">
+                  <use xlink:href="images/sprites-logo.svg#arrow-d-left"></use>
+                </svg>
+                <svg class="start-arrows__arrow start-arrows__arrow_right m-hidden mp-hidden" width="122" height="41"
+                  viewbox="0 0 122 41">
+                  <use xlink:href="images/sprites-logo.svg#arrow-d-right"></use>
+                </svg>
+                <svg class="start-arrows__arrow start-arrows__arrow_left d-hidden" width="72" height="104"
+                  viewbox="0 0 72 104">
+                  <use xlink:href="images/sprites-logo.svg#arrow-m-left"></use>
+                </svg>
+                <svg class="start-arrows__arrow start-arrows__arrow_right d-hidden" width="72" height="104"
+                  viewbox="0 0 72 104">
+                  <use xlink:href="images/sprites-logo.svg#arrow-m-right"></use>
+                </svg>
+              </div>
+              <div class="start-loading start__loading">
+                <p class="start__title start__title_loading">Loading <span class="start-loading__percent">0%</span></p>
+                <p class="start__text">Please wait...</p>
+              </div>
+            </div>
+          </div>
+          <div class="col col_v_c start__col m-hidden mp-hidden">
+            <button class="start-image start__image" data-gender="female" aria-label="Select female">
+              <picture>
+                <source srcset="images/f.webp 1x, images/f2.webp 2x" type="image/webp" media="(min-width:768px)">
+                <source srcset="images/f.png 1x, images/f2.png 2x" type="image/png" media="(min-width:768px)">
+                <source srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                  type="image/gif" media="(max-width:767px)">
+                <img src="images/f2.png" class="start-image__image start-image__image_f m-hidden mp-hidden" alt=""
+                  width="275" height="333">
+              </picture>
+            </button>
+          </div>
+        </div>
+      </div>
+    </article>
+    <header class="m-hidden mp-hidden header page__header hidden-beforestart">
+      <div class="container header__container">
+        <div class="row">
+          <div class="col col_left col_h_c">
+            <a href="/" class="logo header__logo">
+              <svg id="logoEnd" class="logo__image" width="114" height="77" viewbox="0 0 201 136">
+                <use xlink:href="images/sprites-logo.svg#logo-base"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col col_right col_h_b col_v_c">
+            <div id="styleButtonsDesktop">
+              <div class="style-buttons" id="styleButtons">
+                <button class="style-buttons__item style-buttons__item_active" aria-label="Select first style">
+                  <div id="svga-svgstyle-0" class="style-buttons__avatar"></div>
+                </button>
+                <button class="style-buttons__item" aria-label="Select second style">
+                  <div id="svga-svgstyle-1" class="style-buttons__avatar"></div>
+                </button>
+                <button class="style-buttons__item" aria-label="Select third style">
+                  <div id="svga-svgstyle-2" class="style-buttons__avatar"></div>
+                </button>
+                <button class="style-buttons__item" aria-label="Select fourth style">
+                  <div id="svga-svgstyle-3" class="style-buttons__avatar"></div>
+                </button>
+              </div>
+            </div>
+            <div class="buttons">
+              <div class="buttons-group buttons__element">
+                <button class="button button_text  button_m-shrink buttons__element" disabled data-action="undo"
+                  aria-label="Undo changes">
+                  <svg class="button__icon" width="15" height="14" viewbox="0 0 15 14">
+                    <use xlink:href="images/sprites.svg#undo"></use>
+                  </svg>
+                  <span class="button__text">Undo</span>
+                </button>
+                <button class="button button_text  button_m-shrink buttons__element" disabled data-action="redo"
+                  aria-label="Redo changes">
+                  <svg class="button__icon" width="16" height="14" viewbox="0 0 16 14">
+                    <use xlink:href="images/sprites.svg#redo"></use>
+                  </svg>
+                  <span class="button__text">Redo</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <header class="d-hidden header page__header hidden-beforestart">
+      <div class="container">
+        <div class="row">
+          <div class="col col_h_b col_v_c">
+            <div class="buttons-group buttons-group_horizontal buttons__element">
+              <button class="button buttons-group__element" disabled data-action="undo" aria-label="Undo changes">
+                <svg class="button__icon" width="15" height="14" viewbox="0 0 15 14">
+                  <use xlink:href="images/sprites.svg#undo"></use>
+                </svg>
+              </button>
+              <button class="button buttons-group__element" disabled data-action="redo" aria-label="Redo changes">
+                <svg class="button__icon" width="16" height="14" viewbox="0 0 16 14">
+                  <use xlink:href="images/sprites.svg#redo"></use>
+                </svg>
+              </button>
+            </div>
+            <a href="/" class="logo header__logo">
+              <svg id="logoEnd" class="logo__image" width="116" height="68" viewbox="0 0 116 68">
+                <use xlink:href="images/sprites-logo.svg#logo-mobile"></use>
+              </svg>
+            </a>
+            <button class="button header__button button_red" id="mobileMenuButton" data-mobile-action="downloadClick"
+              aria-label="Open menu">
+              <svg class="button__icon" width="20" height="12" viewbox="0 0 20 12">
+                <use xlink:href="images/sprites.svg#ok"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <article class="content page__content hidden-beforestart">
+      <div class="container content__container">
+        <div class="row content__first-row row_mob-w_w">
+          <div class="col col_left col_mob-w col_mob-column">
+            <div class="avatar">
+              <canvas id="svga-canvas" class="avatar__canvas" width="200" height="200"></canvas>
+              <div id="svga-svgmain" class="avatar__image"></div>
+            </div>
+          </div>
+          <div class="col col_right col_column col_mob-w content__cat-outer">
+            <div class="content__cat-control">
+              <div class="content__category content__category_hidden">
+                <div class="m-hidden mp-hidden avatar-cat content__categories hidden-beforestart">
+                  <div class="category-controls avatar-cat__item" data-category-name="face">
+                    <button class="cat-button category-controls__item" data-zone-name="faceshape"
+                      aria-label="Select face category">
+                      <svg class="cat-button__icon" width="42" height="41" viewbox="0 0 42 41">
+                        <use xlink:href="images/sprites.svg#face"></use>
+                      </svg>
+                      <span class="cat-button__text">Face</span>
+                    </button>
+                    <button class="cat-button category-controls__item" data-zone-name="nose"
+                      aria-label="Select nose category">
+                      <svg class="cat-button__icon" width="33" height="37" viewbox="0 0 33 37">
+                        <use xlink:href="images/sprites.svg#face-nose"></use>
+                      </svg>
+                      <span class="cat-button__text">Nose</span>
+                    </button>
+                    <button class="cat-button category-controls__item" data-zone-name="mouth"
+                      aria-label="Select mouth category">
+                      <svg class="cat-button__icon" width="47" height="23" viewbox="0 0 47 23">
+                        <use xlink:href="images/sprites.svg#face-mouth"></use>
+                      </svg>
+                      <span class="cat-button__text">Mouth</span>
+                    </button>
+                    <button class="cat-button category-controls__item" data-zone-name="ears"
+                      aria-label="Select ears category">
+                      <svg class="cat-button__icon" width="26" height="36" viewbox="0 0 26 36">
+                        <use xlink:href="images/sprites.svg#face-ear"></use>
+                      </svg>
+                      <span class="cat-button__text">Ear</span>
+                    </button>
+                  </div>
+                  <div class="category-controls avatar-cat__item" data-category-name="eyes">
+                    <button class="cat-button category-controls__item" data-zone-name="eyesfront"
+                      aria-label="Select eyes category">
+                      <svg class="cat-button__icon" width="50" height="26" viewbox="0 0 50 26">
+                        <use xlink:href="images/sprites.svg#eyes"></use>
+                      </svg>
+                      <span class="cat-button__text">Eyes</span>
+                    </button>
+                    <button class="cat-button category-controls__item" data-zone-name="eyesiris"
+                      aria-label="Select eyesiris category">
+                      <svg class="cat-button__icon" width="32" height="32" viewbox="0 0 32 32">
+                        <use xlink:href="images/sprites.svg#eyes-iris"></use>
+                      </svg>
+                      <span class="cat-button__text">Iris</span>
+                    </button>
+                    <button class="cat-button category-controls__item" data-zone-name="eyebrows"
+                      aria-label="Select eyebrows category">
+                      <svg class="cat-button__icon" width="44" height="19" viewbox="0 0 44 19">
+                        <use xlink:href="images/sprites.svg#eyes-eyebrows"></use>
+                      </svg>
+                      <span class="cat-button__text">Brows</span>
+                    </button>
+                    <button class="cat-button category-controls__item" data-zone-name="glasses"
+                      aria-label="Select glasses category">
+                      <svg class="cat-button__icon" width="40" height="32" viewbox="0 0 40 32">
+                        <use xlink:href="images/sprites.svg#eyes-glasses"></use>
+                      </svg>
+                      <span class="cat-button__text">Glasses</span>
+                    </button>
+                  </div>
+                  <div class="category-controls avatar-cat__item" data-category-name="hair">
+                    <button class="cat-button category-controls__item" data-zone-name="hair"
+                      aria-label="Select hair category">
+                      <svg class="cat-button__icon" width="42" height="46" viewbox="0 0 42 46">
+                        <use xlink:href="images/sprites.svg#hair"></use>
+                      </svg>
+                      <span class="cat-button__text">Hair</span>
+                    </button>
+                    <button class="cat-button category-controls__item" data-zone-name="mustache"
+                      aria-label="Select mustache category">
+                      <svg class="cat-button__icon" width="48" height="17" viewbox="0 0 48 17">
+                        <use xlink:href="images/sprites.svg#hair-mustache"></use>
+                      </svg>
+                      <span class="cat-button__text cat-button__text_mustache">Mustache</span>
+                    </button>
+                    <button class="cat-button category-controls__item" data-zone-name="beard"
+                      aria-label="Select beard category">
+                      <svg class="cat-button__icon" width="43" height="33" viewbox="0 0 43 33">
+                        <use xlink:href="images/sprites.svg#hair-beard"></use>
+                      </svg>
+                      <span class="cat-button__text">Beard</span>
+                    </button>
+                  </div>
+                  <div class="category-controls avatar-cat__item" data-category-name="clothes">
+                    <button class="cat-button category-controls__item" data-zone-name="clothes"
+                      aria-label="Select clothes category">
+                      <svg class="cat-button__icon" width="46" height="53" viewbox="0 0 46 53">
+                        <use xlink:href="images/sprites.svg#clothes"></use>
+                      </svg>
+                      <span class="cat-button__text">Clothes</span>
+                    </button>
+                  </div>
+                  <div class="category-controls avatar-cat__item" data-category-name="backs">
+                    <button class="cat-button category-controls__item" data-zone-name="backs"
+                      aria-label="Select backs category">
+                      <svg class="cat-button__icon" width="31" height="31" viewbox="0 0 31 31">
+                        <use xlink:href="images/sprites.svg#back"></use>
+                      </svg>
+                      <span class="cat-button__text">Backs</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="d-hidden mobile-category mobile-category_hidden content__mobile-category">
+                  <button class="button" data-action="backToCategories" aria-label="Back to categories">
+                    <svg class="button__icon" width="25" height="16" viewbox="0 0 25 16">
+                      <use xlink:href="images/sprites.svg#left"></use>
+                    </svg>
+                  </button>
+                  <div class="mobile-category__slot"></div>
+                  <button class="button" data-action="openMoveSection" aria-label="Open move menu">
+                    <svg class="button__icon" width="28" height="28" viewbox="0 0 28 28">
+                      <use xlink:href="images/sprites.svg#move"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="d-hidden mobile-control mobile-control_hidden content__mobile-control">
+                  <button class="button mobile-control__button" data-action="backToZones" aria-label="Back to zones">
+                    <svg class="button__icon" width="25" height="16" viewBox="0 0 25 16">
+                      <use xlink:href="images/sprites.svg#left"></use>
+                    </svg>
+                  </button>
+                  <p class="mobile-control__title">Avatar controls</p>
+                  <div class="mobile-control__avatar-slot"></div>
+                  <p class="mobile-control__title" id="zoneControlTitle"><span class="mobile-control__title-zone"
+                      id="zoneControlTitleZone">Zone</span> controls</p>
+                  <div class="mobile-control__slot"></div>
+                </div>
+                <div class="d-hidden mobile-styles mobile-styles_hidden content__mobile-styles">
+                  <button class="button mobile-styles__button" data-action="backToZones" aria-label="Back to zones">
+                    <svg class="button__icon" width="25" height="16" viewBox="0 0 25 16">
+                      <use xlink:href="images/sprites.svg#left"></use>
+                    </svg>
+                  </button>
+                  <p class="mobile-styles__title">Select style</p>
+                  <div class="mobile-styles__style-buttons" id="styleButtonsMobile"></div>
+                </div>
+                <div class="avatar-elements content__elements">
+                  <div class="avatar-elements__inner">
+                    <div class="avatar-elements__content"></div>
+                  </div>
+                  <div class="palette avatar-elements__palette palette_hidden" id="palette">
+                    <div class="palette__header">
+                      <button class="d-hidden button palette__back-button" data-action="backToZones"
+                        aria-label="Back to zones">
+                        <svg class="button__icon" width="25" height="16" viewBox="0 0 25 16">
+                          <use xlink:href="images/sprites.svg#left"></use>
+                        </svg>
+                      </button>
+                      <p class="d-hidden palette__title">Color palette</p>
+                    </div>
+                    <div class="palette__content">
+                      <div class="palette__color">
+                        <div class="palette__color-area" data-palette="area"></div>
+                        <div class="palette__color-hue" data-palette="hue"></div>
+                      </div>
+                      <div class="palette__settings">
+                        <div class="palette__current">
+                          <div class="palette__current-buttons">
+                            <button class="palette__button palette__button_color" data-palette="old"
+                              style="background-color:#EED5D0;" data-palette-color="#EED5D0"
+                              aria-label="Old color"></button>
+                            <button class="palette__button palette__button_color palette__button_events-none"
+                              data-palette="current" tabindex="-1" style="background-color:#000000;"
+                              aria-label="Current color"></button>
+                          </div>
+                          <label class="palette__input">
+                            <span class="palette__input-text">#</span>
+                            <input type="text" spellcheck="false" class="palette__input-field" data-palette="input"
+                              value="000000" maxlength="6">
+                          </label>
+                        </div>
+                        <div class="palette__list" data-palette="list">
+                          <button class="palette__button" aria-label="1 color"></button>
+                          <button class="palette__button" aria-label="2 color"></button>
+                          <button class="palette__button" aria-label="3 color"></button>
+                          <button class="palette__button" aria-label="4 color"></button>
+                          <button class="palette__button" aria-label="5 color"></button>
+                          <button class="palette__button" aria-label="6 color"></button>
+                          <button class="palette__button" aria-label="7 color"></button>
+                          <button class="palette__button" aria-label="8 color"></button>
+                          <button class="palette__button" aria-label="9 color"></button>
+                          <button class="palette__button" aria-label="10 color"></button>
+                          <button class="palette__button" aria-label="11 color"></button>
+                          <button class="palette__button" aria-label="12 color"></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="content__cat-select cat-select hidden-beforestart">
+                <p class="cat-select__title">Create</p>
+                <p class="cat-select__text">Select the editing area of your avatar</p>
+                <ul class="cat-select__list">
+                  <li class="cat-select__list-item">
+                    <button class="cat-select__button" data-cat-index="0" aria-label="Select face zone">
+                      <svg class="cat-select__button-icon cat-select__button-icon_face" width="42" height="41"
+                        viewbox="0 0 42 41">
+                        <use xlink:href="images/sprites.svg#face"></use>
+                      </svg>
+                      <span class="cat-select__button-title">Face</span>
+                    </button>
+                  </li>
+                  <li class="cat-select__list-item">
+                    <button class="cat-select__button" data-cat-index="1" aria-label="Select eyes zone">
+                      <svg class="cat-select__button-icon" width="50" height="26" viewbox="0 0 50 26">
+                        <use xlink:href="images/sprites.svg#eyes"></use>
+                      </svg>
+                      <span class="cat-select__button-title">Eyes</span>
+                    </button>
+                  </li>
+                  <li class="cat-select__list-item">
+                    <button class="cat-select__button" data-cat-index="2" aria-label="Select hair zone">
+                      <svg class="cat-select__button-icon" width="42" height="46" viewbox="0 0 42 46">
+                        <use xlink:href="images/sprites.svg#hair"></use>
+                      </svg>
+                      <span class="cat-select__button-title">Hair</span>
+                    </button>
+                  </li>
+                  <li class="cat-select__list-item">
+                    <button class="cat-select__button" data-cat-index="3" aria-label="Select clothes zone">
+                      <svg class="cat-select__button-icon" width="46" height="53" viewbox="0 0 46 53">
+                        <use xlink:href="images/sprites.svg#clothes"></use>
+                      </svg>
+                      <span class="cat-select__button-title">Clothes</span>
+                    </button>
+                  </li>
+                  <li class="cat-select__list-item">
+                    <button class="cat-select__button" data-cat-index="4" aria-label="Select backs zones">
+                      <svg class="cat-select__button-icon cat-select__button-icon_backs" width="31" height="31"
+                        viewbox="0 0 31 31">
+                        <use xlink:href="images/sprites.svg#back"></use>
+                      </svg>
+                      <span class="cat-select__button-title">Backs</span>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col_left m-hidden" id="desktopAvatarButtons">
+            <div class="buttons content__avatar-buttons buttons_between">
+              <div class="buttons-group buttons-group_horizontal buttons__element">
+                <button class="button buttons-group__element" data-action="globLeft" aria-label="Move avatar left">
+                  <svg class="button__icon" width="25" height="16" viewbox="0 0 25 16">
+                    <use xlink:href="images/sprites.svg#left"></use>
+                  </svg>
+                </button>
+                <button class="button buttons-group__element" data-action="globRight" aria-label="Move avatar right">
+                  <svg class="button__icon" width="26" height="16" viewbox="0 0 26 16">
+                    <use xlink:href="images/sprites.svg#right"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="buttons-group buttons-group_horizontal buttons__element">
+                <button class="button buttons-group__element" data-action="globUp" aria-label="Move avatar up">
+                  <svg class="button__icon" width="16" height="25" viewbox="0 0 16 25">
+                    <use xlink:href="images/sprites.svg#up"></use>
+                  </svg>
+                </button>
+                <button class="button buttons-group__element" data-action="globDown" aria-label="Move avatar down">
+                  <svg class="button__icon" width="15" height="26" viewbox="0 0 15 26">
+                    <use xlink:href="images/sprites.svg#down"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="buttons-group buttons-group_horizontal buttons__element">
+                <button class="button buttons-group__element" data-action="globPlus" aria-label="Zoom-in avatar">
+                  <svg class="button__icon" width="23" height="23" viewbox="0 0 23 23">
+                    <use xlink:href="images/sprites.svg#plus"></use>
+                  </svg>
+                </button>
+                <button class="button buttons-group__element" data-action="globMinus" aria-label="Zoom-out avatar">
+                  <svg class="button__icon" width="23" height="23" viewbox="0 0 23 23">
+                    <use xlink:href="images/sprites.svg#minus"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="buttons-group buttons-group_horizontal buttons__element">
+                <button class="button buttons-group__element" data-action="globRotateLeft" aria-label="Tilt head left">
+                  <svg class="button__icon" width="20" height="19" viewbox="0 0 20 19">
+                    <use xlink:href="images/sprites.svg#rotate-left"></use>
+                  </svg>
+                </button>
+                <button class="button buttons-group__element" data-action="globRotateRight"
+                  aria-label="Tilt head right">
+                  <svg class="button__icon" width="20" height="20" viewbox="0 0 20 20">
+                    <use xlink:href="images/sprites.svg#rotate-right"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col col_right col_p_r">
+            <div class="buttons buttons_categories content__categories-buttons content__categories-buttons_hidden">
+              <div class="buttons-group buttons__element" data-name="color">
+                <button class="button buttons-group__element button_color" id="togglePaletteButton"
+                  data-action="zoneColor" aria-label="Toggle palette">
+                  <svg class="button__icon" width="50" height="50" viewbox="1 1 48 48">
+                    <use xlink:href="#color"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="buttons-group buttons-group_horizontal buttons__element" data-name="up-down">
+                <button class="button buttons-group__element" data-action="zoneUp" aria-label="Move zone up">
+                  <svg class="button__icon" width="16" height="25" viewbox="0 0 16 25">
+                    <use xlink:href="images/sprites.svg#up"></use>
+                  </svg>
+                </button>
+                <button class="button buttons-group__element" data-action="zoneDown" aria-label="Move zone down">
+                  <svg class="button__icon" width="15" height="26" viewbox="0 0 15 26">
+                    <use xlink:href="images/sprites.svg#down"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="buttons-group buttons-group_horizontal buttons__element" data-name="left-right">
+                <button class="button buttons-group__element" data-action="zoneLeft" aria-label="Move zone left">
+                  <svg class="button__icon" width="25" height="16" viewbox="0 0 25 16">
+                    <use xlink:href="images/sprites.svg#left"></use>
+                  </svg>
+                </button>
+                <button class="button buttons-group__element" data-action="zoneRight" aria-label="Move zone right">
+                  <svg class="button__icon" width="26" height="16" viewbox="0 0 26 16">
+                    <use xlink:href="images/sprites.svg#right"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="buttons-group buttons-group_horizontal buttons__element" data-name="shrink-expand">
+                <button class="button buttons-group__element" data-action="zoneShrink" aria-label="Shrink zone">
+                  <svg class="button__icon" width="29" height="12" viewbox="0 0 29 12">
+                    <use xlink:href="images/sprites.svg#shrink"></use>
+                  </svg>
+                </button>
+                <button class="button buttons-group__element" data-action="zoneExpand" aria-label="Expand zone">
+                  <svg class="button__icon" width="30" height="12" viewbox="0 0 30 12">
+                    <use xlink:href="images/sprites.svg#expand"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="buttons-group buttons-group_horizontal buttons__element" data-name="plus-minus">
+                <button class="button buttons-group__element" data-action="zonePlus" aria-label="Zoom-in zone">
+                  <svg class="button__icon" width="23" height="23" viewbox="0 0 23 23">
+                    <use xlink:href="images/sprites.svg#plus"></use>
+                  </svg>
+                </button>
+                <button class="button buttons-group__element" data-action="zoneMinus" aria-label="Zoom-out zone">
+                  <svg class="button__icon" width="23" height="23" viewbox="0 0 23 23">
+                    <use xlink:href="images/sprites.svg#minus"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="buttons-group buttons-group_horizontal buttons__element" data-name="eyebrows">
+                <button class="button buttons-group__element" data-action="zoneBrows1"
+                  aria-label="Set first brows style">
+                  <svg class="button__icon" width="36" height="16" viewbox="0 0 36 16">
+                    <use xlink:href="images/sprites.svg#brows1"></use>
+                  </svg>
+                </button>
+                <button class="button buttons-group__element" data-action="zoneBrows2"
+                  aria-label="Set second brows style">
+                  <svg class="button__icon" width="36" height="16" viewbox="0 0 36 16">
+                    <use xlink:href="images/sprites.svg#brows2"></use>
+                  </svg>
+                </button>
+                <button class="button buttons-group__element" data-action="zoneBrows3"
+                  aria-label="Set third brows style">
+                  <svg class="button__icon" width="33" height="16" viewbox="0 0 33 16">
+                    <use xlink:href="images/sprites.svg#brows3"></use>
+                  </svg>
+                </button>
+                <button class="button buttons-group__element" data-action="zoneBrows4"
+                  aria-label="Set fourth brows style">
+                  <svg class="button__icon" width="40" height="14" viewbox="0 0 40 14">
+                    <use xlink:href="images/sprites.svg#brows4"></use>
+                  </svg>
+                </button>
+                <button class="button buttons-group__element" data-action="zoneBrowsCancel"
+                  aria-label="Cancel brows style">
+                  <svg class="button__icon" width="15" height="16" viewbox="0 0 15 16">
+                    <use xlink:href="images/sprites.svg#close"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <footer class="footer page__footer hidden-beforestart">
+      <div class="container footer__container">
+        <div class="row">
+          <div class="col col_left">
+            <div class="buttons">
+              <div class="buttons-group buttons__element">
+                <button class="button button_text buttons__element" data-action="random" aria-label="Randomize avatar">
+                  <svg class="button__icon" width="23" height="17" viewbox="0 0 23 17">
+                    <use xlink:href="images/sprites.svg#random"></use>
+                  </svg>
+                  <span class="button__text">Random</span>
+                </button>
+                <button class="button button_text buttons__element" data-action="reset" aria-label="Reset avatar">
+                  <svg class="button__icon" width="14" height="15" viewbox="0 0 14 15">
+                    <use xlink:href="images/sprites.svg#reset"></use>
+                  </svg>
+                  <span class="button__text">Reset</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col col_right col_h_r">
+            <div id="footerPalleteMove" class="d-hidden buttons buttons_mob buttons_mob-add buttons_hidden">
+              <div class="buttons-group buttons__element buttons-group_will-change" id="mobStylesButton">
+                <button class="button button_text buttons__element" data-action="openStylesSection"
+                  aria-label="Open styles section">
+                  <svg class="button__icon" width="18" height="16" viewbox="0 0 18 16">
+                    <use xlink:href="images/sprites.svg#styles"></use>
+                  </svg>
+                  <span class="button__text">Styles</span>
+                </button>
+              </div>
+              <div class="buttons-group buttons__element buttons-group_will-change" id="mobColorButton">
+                <button class="button buttons-group__element button_color" id="togglePaletteButton"
+                  data-action="zoneColor" aria-label="Toggle palette">
+                  <svg class="button__icon" width="50" height="50" viewbox="1 1 48 48">
+                    <use xlink:href="#color"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div id="footerServerActions" class="buttons buttons_mob hidden-beforestart">
+              <div class="buttons-group buttons__element">
+                <div class="button-outer buttons__element">
+                  <button id="shareButton" class="button button_text button_m-icon" data-mobile-action="downloadClick"
+                    aria-label="Share">
+                    <div class="button__icon">
+                      <svg id="shareButtonIcon" class="button__icon button__icon_nomr" width="14" height="18"
+                        viewbox="0 0 14 18">
+                        <use xlink:href="images/sprites.svg#share"></use>
+                      </svg>
+                      <svg id="shareButtonIconLoader"
+                        class="button__icon button__icon_abs button__icon_hidden button__icon_rotate" width="18"
+                        height="18" viewbox="-3 -3 42 42">
+                        <use xlink:href="#loader"></use>
+                      </svg>
+                    </div>
+                    <span class="button__text">Share</span>
+                  </button>
+                  <div id="shareContent" class="buttons footer__popup mp-hidden">
+                    <div class="buttons-group buttons-group_horizontal buttons__element">
+                      <button class="button button_soc-fb buttons-group__element" data-share="facebook"
+                        aria-label="Share via Facebook">
+                        <svg class="button__icon" width="11" height="18" viewbox="0 0 11 18">
+                          <use xlink:href="images/sprites.svg#soc-facebook"></use>
+                        </svg>
+                      </button>
+                      <button class="button button_soc-tw buttons-group__element" data-share="twitter"
+                        aria-label="Share via Twitter">
+                        <svg class="button__icon" width="20" height="16" viewbox="0 0 20 16">
+                          <use xlink:href="images/sprites.svg#soc-twitter"></use>
+                        </svg>
+                      </button>
+                      <button class="button button_soc-pt buttons-group__element" data-share="pinterest"
+                        aria-label="Share via Pinterest">
+                        <svg class="button__icon" width="17" height="19" viewbox="0 0 17 19">
+                          <use xlink:href="images/sprites.svg#soc-pinterest"></use>
+                        </svg>
+                        <svg class="button__icon button__icon_pin-load button__icon_hidden button__icon_rotate"
+                          width="18" height="18" viewbox="-3 -3 42 42">
+                          <use xlink:href="#pinloader"></use>
+                        </svg>
+                      </button>
+                      <button class="button button_soc-wa buttons-group__element" data-share="whatsapp"
+                        aria-label="Share via WhatsApp">
+                        <svg class="button__icon" width="18" height="18" viewbox="0 0 31 31">
+                          <use xlink:href="images/sprites.svg#whatsapp"></use>
+                        </svg>
+                      </button>
+                      <button class="button button_soc-tg buttons-group__element" data-share="telegram"
+                        aria-label="Share via Telegram">
+                        <svg class="button__icon" width="20" height="18" viewbox="0 0 24 22">
+                          <use xlink:href="images/sprites.svg#telegram"></use>
+                        </svg>
+                      </button>
+                      <button class="button button_soc-rd buttons-group__element" data-share="reddit"
+                        aria-label="Share via Reddit">
+                        <svg class="button__icon" width="20" height="17" viewbox="0 0 45 39">
+                          <use xlink:href="images/sprites.svg#reddit"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="button-outer buttons__element">
+                  <button id="downloadButton" class="button button_text button_red button_m-icon button_download"
+                    data-action="downloadClick" aria-label="Download">
+                    <div class="button__icon">
+                      <svg id="downloadButtonIcon" class="button__icon button__icon_nomr" width="13" height="17"
+                        viewbox="0 0 13 17">
+                        <use xlink:href="images/sprites.svg#download"></use>
+                      </svg>
+                      <svg id="downloadButtonIconLoader"
+                        class="button__icon button__icon_abs button__icon_hidden button__icon_rotate" width="18"
+                        height="18" viewbox="-3 -3 42 42">
+                        <use xlink:href="#loader"></use>
+                      </svg>
+                    </div>
+                    <span class="button__text">Download</span>
+                  </button>
+                  <div id="downloadContent" class="buttons footer__popup ios-hidden footer__popup_download mp-hidden">
+                    <div class="buttons-group buttons-group_vertical buttons__element">
+                      <button class="button button_text buttons-group__element" data-action="savePngFirst"
+                        aria-label="Download 200x200 png">
+                        <span class="button__text">200x200 (.png)</span>
+                      </button>
+                      <button class="button button_text buttons-group__element" data-action="savePngSecond"
+                        aria-label="Download 400x400 png">
+                        <span class="button__text">400x400 (.png)</span>
+                      </button>
+                      <button class="button button_text buttons-group__element" data-action="saveSvg"
+                        aria-label="Download svg">
+                        <span class="button__text">vector format (.svg)</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <article class="d-hidden mobile-menu mobile-menu_hidden hidden-beforestart">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="mobile-menu__inner">
+              <div class="mobile-menu__header">
+                <p class="mobile-menu__title">Save and share</p>
+                <button type="button" class="button" data-action="closeMenu" aria-label="Close menu">
+                  <svg class="button__icon" width="15" height="16" viewbox="0 0 15 16">
+                    <use xlink:href="images/sprites.svg#close"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="mobile-menu__content">
+                <div class="mobile-menu__download">
+                  <p class="mobile-menu__title">Download</p>
+                  <div class="ios-visible">
+                    <p class="mobile-menu__text">Please tap and hold the image and choose Save</p>
+                    <div class="mobile-menu__image">
+                      <img src="#" class="mobile-menu__image-inner" />
+                    </div>
+                  </div>
+                  <div class="mobile-menu__download-slot ios-hidden"></div>
+                </div>
+                <div class="mobile-menu__share">
+                  <p class="mobile-menu__title">Share</p>
+                  <div class="mobile-menu__share-slot"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+  <script>
+    (function () {
+      var pi = document.querySelector(".page__inner");
+      if (!pi.classList.contains("page__inner_ready")) {
+        pi.style.height = document.querySelector(".start__container").offsetHeight + "px";
+      } else {
+        pi.style.height = "";
+      }
+    })();
+  </script>
+  <article class="modal page__modal hidden-beforestart">
+    <section class="modal-content modal-content_tac modal-content_tiny" data-modal-name="ios">
+      <div class="modal-content__header">
+        <p class="modal__title">Download</p>
+        <p class="modal__text">Please tap and hold the image and choose Save</p>
+      </div>
+      <div class="modal-content__content">
+        <div class="modal__ios-image">
+          <img src="#" alt="" class="modal__image">
+        </div>
+      </div>
+      <div class="modal-content__footer">
+        <div class="modal__buttons">
+          <button tabindex="-1" type="button" class="button button_text" data-modal-click="close"
+            aria-label="Close menu">
+            <svg class="button__icon" width="15" height="16" viewbox="0 0 15 16">
+              <use xlink:href="images/sprites.svg#close"></use>
+            </svg>
+            <span class="button__text">Close</span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </article>
+  <div class="hb" style="max-width: 728px;">
+  
+  广告投放热线：86-0-13386070835
+
+  </div>
+
+  <a href="http://www.luhui.net" target="_blank" class="ug" style="font-size: 1em;">
+    <style>
+      @font-face {
+        font-family: 'Avenir Next';
+        src: url('data:font/woff;charset=utf-8;base64,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') format('woff');
+        font-weight: 500;
+        font-style: italic;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: 'Avenir Next';
+        src: url('data:font/woff;charset=utf-8;base64,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') format('woff');
+        font-weight: bold;
+        font-style: italic;
+        font-display: swap;
+      }
+
+      .ug {
+        box-sizing: border-box;
+        font-size: 1em;
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        max-width: 27.5em;
+        width: 100%;
+        text-align: center;
+        margin-top: 1.75em;
+        padding: 0 2.5em .875em;
+        text-decoration: none;
+        transform: scale(1);
+        transform: translateZ(0) scale(1);
+        transition: transform .35s;
+      }
+
+      .ug:hover {
+        transform: scale(1.025);
+        transform: translateZ(0) scale(1.025);
+      }
+
+      .ug:before,
+      .ug:after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        transform: skewX(-8deg);
+      }
+
+      .ug:before {
+        top: .875em;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: .625em;
+        background-image: linear-gradient(90deg, rgb(237, 252, 251) 0%, rgb(231, 243, 254) 15%, rgb(250, 247, 253) 50%, rgb(231, 242, 254) 85%, rgb(237, 252, 251) 100%);
+      }
+
+      .ug:after {
+        top: 1em;
+        left: .125em;
+        right: .125em;
+        bottom: .125em;
+        border-radius: .5em;
+        background-color: rgba(255, 255, 255, .7);
+      }
+
+      .ug__logo {
+        position: relative;
+        display: inline-block;
+        margin-bottom: .5em;
+        width: 10em;
+        height: 1.75em;
+      }
+
+      .ug__logo-image {
+        display: inline-block;
+        vertical-align: top;
+      }
+
+      .ug__logo-text {
+        font-family: "Avenir Next", "Open Sans", "Helvetica", "Arial", sans-serif;
+        font-style: italic;
+        font-size: 1em;
+        color: #171717;
+        font-weight: 500;
+        margin: 0;
+      }
+
+      .ug__logo-mark {
+        color: #2976F6;
+        font-weight: 700;
+      }
+
+      @media screen and (max-width:480px) {
+        .ug {
+          max-width: 90vw;
+          padding: 0 1.5em .875em;
+        }
+      }
+    </style>
+    <div class="ug__logo">
+      <svg class="ug__logo-image" width="160" height="28" viewBox="0 0 110 18" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <rect y="6.01172" width="109.9" height="5.97544" fill="white" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M48.8462 17.1818C48.8462 17.6337 48.5018 18 48.0769 18H8.46154C8.03671 18 7.69231 17.6337 7.69231 17.1818C7.69231 16.7299 8.03671 16.3636 8.46154 16.3636H48.0769C48.5018 16.3636 48.8462 16.7299 48.8462 17.1818Z"
+          fill="#8653BB" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M48.8462 17.1818C48.8462 17.6337 48.5018 18 48.0769 18H8.46154C8.03671 18 7.69231 17.6337 7.69231 17.1818C7.69231 16.7299 8.03671 16.3636 8.46154 16.3636H48.0769C48.5018 16.3636 48.8462 16.7299 48.8462 17.1818Z"
+          fill="white" fill-opacity="0.5" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M48.8462 0.818182C48.8462 1.27005 48.5018 1.63636 48.0769 1.63636H8.46154C8.03671 1.63636 7.69231 1.27005 7.69231 0.818182C7.69231 0.366312 8.03671 0 8.46154 0H48.0769C48.5018 0 48.8462 0.366312 48.8462 0.818182Z"
+          fill="#8653BB" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M48.8462 0.818182C48.8462 1.27005 48.5018 1.63636 48.0769 1.63636H8.46154C8.03671 1.63636 7.69231 1.27005 7.69231 0.818182C7.69231 0.366312 8.03671 0 8.46154 0H48.0769C48.5018 0 48.8462 0.366312 48.8462 0.818182Z"
+          fill="white" fill-opacity="0.5" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M1.53846 9C1.53846 13.0668 4.63803 16.3636 8.46154 16.3636V18C3.78836 18 0 13.9706 0 9C0 4.02944 3.78836 0 8.46154 0V1.63636C4.63803 1.63636 1.53846 4.93318 1.53846 9Z"
+          fill="#8653BB" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M1.53846 9C1.53846 13.0668 4.63803 16.3636 8.46154 16.3636V18C3.78836 18 0 13.9706 0 9C0 4.02944 3.78836 0 8.46154 0V1.63636C4.63803 1.63636 1.53846 4.93318 1.53846 9Z"
+          fill="white" fill-opacity="0.5" />
+        <path
+          d="M9.07296 11.9877C8.56526 11.9877 8.1168 11.9007 7.72757 11.7267C7.34398 11.5467 7.04219 11.2857 6.82219 10.9437C6.60219 10.5957 6.49219 10.1697 6.49219 9.66572V6.10172H8.08296V9.48572C8.08296 10.1937 8.41296 10.5477 9.07296 10.5477C9.38885 10.5477 9.63142 10.4607 9.80065 10.2867C9.96988 10.1127 10.0545 9.84572 10.0545 9.48572V6.10172H11.6453V9.66572C11.6453 10.1697 11.5353 10.5957 11.3153 10.9437C11.1009 11.2857 10.7991 11.5467 10.4099 11.7267C10.0263 11.9007 9.58065 11.9877 9.07296 11.9877Z"
+          fill="#343D43" />
+        <path
+          d="M14.1537 11.9877C13.787 11.9877 13.4401 11.9577 13.1129 11.8977C12.7858 11.8317 12.5065 11.7417 12.2753 11.6277V10.2327C12.5291 10.3587 12.8112 10.4607 13.1214 10.5387C13.4317 10.6167 13.7222 10.6557 13.9929 10.6557C14.275 10.6557 14.4865 10.6317 14.6276 10.5837C14.7742 10.5297 14.8476 10.4127 14.8476 10.2327C14.8476 10.1067 14.8053 10.0077 14.7206 9.93572C14.6417 9.86372 14.5147 9.79772 14.3399 9.73772C14.1706 9.67772 13.9478 9.60272 13.6714 9.51272C13.3047 9.38672 13.0142 9.24872 12.7999 9.09872C12.5855 8.94872 12.4304 8.76572 12.3345 8.54972C12.2442 8.33372 12.1991 8.06972 12.1991 7.75772C12.1991 7.18772 12.3881 6.75572 12.766 6.46172C13.1496 6.16172 13.7165 6.01172 14.4668 6.01172C14.7658 6.01172 15.0732 6.03872 15.3891 6.09272C15.7106 6.14672 15.9701 6.20672 16.1676 6.27272V7.67672C15.9024 7.56272 15.6486 7.48172 15.406 7.43372C15.1635 7.38572 14.935 7.36172 14.7206 7.36172C14.4724 7.36172 14.2609 7.38272 14.086 7.42472C13.9111 7.46672 13.8237 7.57472 13.8237 7.74872C13.8237 7.89872 13.897 8.00972 14.0437 8.08172C14.196 8.14772 14.464 8.23472 14.8476 8.34272C15.2932 8.46872 15.6317 8.62172 15.8629 8.80172C16.0999 8.98172 16.2606 9.19172 16.3453 9.43172C16.4299 9.66572 16.4722 9.93272 16.4722 10.2327C16.4722 10.7607 16.2804 11.1867 15.8968 11.5107C15.5132 11.8287 14.9322 11.9877 14.1537 11.9877Z"
+          fill="#343D43" />
+        <path
+          d="M17.0618 11.8977V6.10172H21.1911V7.39772H18.6526V8.34272H20.878V9.65672H18.6526V10.6017H21.1911V11.8977H17.0618Z"
+          fill="#343D43" />
+        <path
+          d="M21.6975 11.8977V6.10172H24.5321C24.9778 6.10172 25.3416 6.18872 25.6237 6.36272C25.9114 6.53672 26.1257 6.77972 26.2667 7.09172C26.4078 7.39772 26.4783 7.75472 26.4783 8.16272C26.4783 8.55272 26.3852 8.89772 26.199 9.19772C26.0185 9.49172 25.776 9.71672 25.4714 9.87272C25.5334 9.92672 25.587 9.99272 25.6321 10.0707C25.6772 10.1427 25.728 10.2447 25.7844 10.3767L26.4106 11.8977H24.7521L24.1767 10.5027C24.1316 10.3947 24.0752 10.3197 24.0075 10.2777C23.9455 10.2297 23.8552 10.2057 23.7367 10.2057H23.2883V11.8977H21.6975ZM23.2883 8.90972H24.126C24.3573 8.90972 24.5349 8.84672 24.659 8.72072C24.7888 8.58872 24.8537 8.40272 24.8537 8.16272C24.8537 7.65272 24.628 7.39772 24.1767 7.39772H23.2883V8.90972Z"
+          fill="#343D43" />
+        <path
+          d="M27.0686 11.8977V6.10172H28.4224L30.4786 9.17072V6.10172H32.0694V11.8977H30.7071L28.6594 8.83772V11.8977H27.0686Z"
+          fill="#343D43" />
+        <path
+          d="M32.6588 11.8977L34.7488 6.10172H36.4327L38.5227 11.8977H36.8642L36.4073 10.6647H34.7658L34.3173 11.8977H32.6588ZM34.9773 9.44972H36.1958L35.5865 7.74872L34.9773 9.44972Z"
+          fill="#343D43" />
+        <path
+          d="M39.1164 11.8977V6.10172H40.6648L42.0187 9.04472L43.3641 6.10172H44.9041V11.8977H43.3133V8.99972L42.4418 10.9077H41.5871L40.7071 8.99972V11.8977H39.1164Z"
+          fill="#343D43" />
+        <path
+          d="M45.6691 11.8977V6.10172H49.7983V7.39772H47.2599V8.34272H49.4853V9.65672H47.2599V10.6017H49.7983V11.8977H45.6691Z"
+          fill="#343D43" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M108.361 9C108.361 4.93318 105.262 1.63636 101.438 1.63636V0C106.111 0 109.9 4.02944 109.9 9C109.9 13.9706 106.111 18 101.438 18V16.3636C105.262 16.3636 108.361 13.0668 108.361 9Z"
+          fill="#8653BB" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M108.361 9C108.361 4.93318 105.262 1.63636 101.438 1.63636V0C106.111 0 109.9 4.02944 109.9 9C109.9 13.9706 106.111 18 101.438 18V16.3636C105.262 16.3636 108.361 13.0668 108.361 9Z"
+          fill="white" fill-opacity="0.5" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M57.9766 0.818182C57.9766 0.366312 58.321 0 58.7458 0H101.438C101.863 0 102.207 0.366312 102.207 0.818182C102.207 1.27005 101.863 1.63636 101.438 1.63636H58.7458C58.321 1.63636 57.9766 1.27005 57.9766 0.818182Z"
+          fill="#8653BB" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M57.9766 0.818182C57.9766 0.366312 58.321 0 58.7458 0H101.438C101.863 0 102.207 0.366312 102.207 0.818182C102.207 1.27005 101.863 1.63636 101.438 1.63636H58.7458C58.321 1.63636 57.9766 1.27005 57.9766 0.818182Z"
+          fill="white" fill-opacity="0.5" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M57.9766 17.1818C57.9766 16.7299 58.321 16.3636 58.7458 16.3636H101.438C101.863 16.3636 102.207 16.7299 102.207 17.1818C102.207 17.6337 101.863 18 101.438 18H58.7458C58.321 18 57.9766 17.6337 57.9766 17.1818Z"
+          fill="#8653BB" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M57.9766 17.1818C57.9766 16.7299 58.321 16.3636 58.7458 16.3636H101.438C101.863 16.3636 102.207 16.7299 102.207 17.1818C102.207 17.6337 101.863 18 101.438 18H58.7458C58.321 18 57.9766 17.6337 57.9766 17.1818Z"
+          fill="white" fill-opacity="0.5" />
+        <path
+          d="M60.8134 11.9877C59.8432 11.9877 59.1042 11.7357 58.5965 11.2317C58.0888 10.7217 57.835 9.99572 57.835 9.05372C57.835 8.08172 58.0973 7.33172 58.6219 6.80372C59.1465 6.27572 59.9137 6.01172 60.9234 6.01172C61.2619 6.01172 61.5665 6.03272 61.8373 6.07472C62.1137 6.11672 62.3732 6.17972 62.6157 6.26372V7.71272C62.3675 7.61072 62.1109 7.54172 61.8457 7.50572C61.5806 7.46972 61.3098 7.45172 61.0334 7.45172C60.5088 7.45172 60.1139 7.57772 59.8488 7.82972C59.5893 8.08172 59.4596 8.48972 59.4596 9.05372C59.4596 9.58172 59.5724 9.96272 59.798 10.1967C60.0293 10.4307 60.3678 10.5477 60.8134 10.5477C60.9601 10.5477 61.0983 10.5387 61.228 10.5207C61.3578 10.4967 61.4791 10.4667 61.5919 10.4307V9.58472H60.5088V8.54072H62.9203V11.4567C62.7116 11.5947 62.4324 11.7177 62.0827 11.8257C61.7386 11.9337 61.3155 11.9877 60.8134 11.9877Z"
+          fill="#343D43" />
+        <path
+          d="M63.5158 11.8977V6.10172H67.645V7.39772H65.1065V8.34272H67.3319V9.65672H65.1065V10.6017H67.645V11.8977H63.5158Z"
+          fill="#343D43" />
+        <path
+          d="M68.1514 11.8977V6.10172H69.5053L71.5614 9.17072V6.10172H73.1522V11.8977H71.7899L69.7422 8.83772V11.8977H68.1514Z"
+          fill="#343D43" />
+        <path
+          d="M73.9109 11.8977V6.10172H78.0401V7.39772H75.5017V8.34272H77.727V9.65672H75.5017V10.6017H78.0401V11.8977H73.9109Z"
+          fill="#343D43" />
+        <path
+          d="M78.5466 11.8977V6.10172H81.3812C81.8268 6.10172 82.1907 6.18872 82.4727 6.36272C82.7604 6.53672 82.9748 6.77972 83.1158 7.09172C83.2568 7.39772 83.3273 7.75472 83.3273 8.16272C83.3273 8.55272 83.2342 8.89772 83.0481 9.19772C82.8676 9.49172 82.625 9.71672 82.3204 9.87272C82.3825 9.92672 82.436 9.99272 82.4812 10.0707C82.5263 10.1427 82.5771 10.2447 82.6335 10.3767L83.2596 11.8977H81.6012L81.0258 10.5027C80.9807 10.3947 80.9242 10.3197 80.8566 10.2777C80.7945 10.2297 80.7042 10.2057 80.5858 10.2057H80.1373V11.8977H78.5466ZM80.1373 8.90972H80.975C81.2063 8.90972 81.384 8.84672 81.5081 8.72072C81.6378 8.58872 81.7027 8.40272 81.7027 8.16272C81.7027 7.65272 81.4771 7.39772 81.0258 7.39772H80.1373V8.90972Z"
+          fill="#343D43" />
+        <path
+          d="M83.3683 11.8977L85.4583 6.10172H87.1422L89.2322 11.8977H87.5737L87.1168 10.6647H85.4752L85.0268 11.8977H83.3683ZM85.6868 9.44972H86.9052L86.296 7.74872L85.6868 9.44972Z"
+          fill="#343D43" />
+        <path d="M90.3 11.8977V7.36172H88.7685V6.10172H93.4223V7.36172H91.8908V11.8977H90.3Z" fill="#343D43" />
+        <path
+          d="M96.3738 11.9877C95.4712 11.9877 94.7802 11.7537 94.3007 11.2857C93.8268 10.8177 93.5899 10.0617 93.5899 9.01772C93.5899 8.29772 93.6971 7.71872 93.9115 7.28072C94.1258 6.83672 94.4389 6.51572 94.8507 6.31772C95.2681 6.11372 95.7758 6.01172 96.3738 6.01172C96.9717 6.01172 97.4766 6.11372 97.8884 6.31772C98.3058 6.51572 98.6217 6.83672 98.8361 7.28072C99.0504 7.71872 99.1576 8.29772 99.1576 9.01772C99.1576 10.0617 98.9179 10.8177 98.4384 11.2857C97.9589 11.7537 97.2707 11.9877 96.3738 11.9877ZM96.3738 10.5477C96.7799 10.5477 97.0732 10.4277 97.2538 10.1877C97.4399 9.94172 97.533 9.55172 97.533 9.01772C97.533 8.44772 97.4399 8.04572 97.2538 7.81172C97.0732 7.57172 96.7799 7.45172 96.3738 7.45172C95.9676 7.45172 95.6715 7.57172 95.4853 7.81172C95.3048 8.04572 95.2145 8.44772 95.2145 9.01772C95.2145 9.55172 95.3048 9.94172 95.4853 10.1877C95.6715 10.4277 95.9676 10.5477 96.3738 10.5477Z"
+          fill="#343D43" />
+        <path
+          d="M99.75 11.8977V6.10172H102.585C103.03 6.10172 103.394 6.18872 103.676 6.36272C103.964 6.53672 104.178 6.77972 104.319 7.09172C104.46 7.39772 104.531 7.75472 104.531 8.16272C104.531 8.55272 104.438 8.89772 104.252 9.19772C104.071 9.49172 103.828 9.71672 103.524 9.87272C103.586 9.92672 103.639 9.99272 103.685 10.0707C103.73 10.1427 103.78 10.2447 103.837 10.3767L104.463 11.8977H102.805L102.229 10.5027C102.184 10.3947 102.128 10.3197 102.06 10.2777C101.998 10.2297 101.908 10.2057 101.789 10.2057H101.341V11.8977H99.75ZM101.341 8.90972H102.178C102.41 8.90972 102.587 8.84672 102.712 8.72072C102.841 8.58872 102.906 8.40272 102.906 8.16272C102.906 7.65272 102.68 7.39772 102.229 7.39772H101.341V8.90972Z"
+          fill="#343D43" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M53.9892 0C54.414 0 54.7584 0.366312 54.7584 0.818182V17.1818C54.7584 17.6337 54.414 18 53.9892 18C53.5643 18 53.22 17.6337 53.22 17.1818V0.818182C53.22 0.366312 53.5643 0 53.9892 0Z"
+          fill="#8653BB" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M51.2969 0.818182C51.2969 0.366312 51.6413 0 52.0661 0H55.9123C56.3371 0 56.6815 0.366312 56.6815 0.818182C56.6815 1.27005 56.3371 1.63636 55.9123 1.63636H52.0661C51.6413 1.63636 51.2969 1.27005 51.2969 0.818182Z"
+          fill="#8653BB" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M51.2969 17.1818C51.2969 16.7299 51.6413 16.3636 52.0661 16.3636H55.9123C56.3371 16.3636 56.6815 16.7299 56.6815 17.1818C56.6815 17.6337 56.3371 18 55.9123 18H52.0661C51.6413 18 51.2969 17.6337 51.2969 17.1818Z"
+          fill="#8653BB" />
+      </svg>
+    </div>
+    <p class="ug__logo-text">Get a cool username in two clicks absolutely free with our new <span
+        class="ug__logo-mark">Username&nbsp;Generator</span> !</p>
+  </a>
+
+  <script>
+    if (!!window.MSInputMethodContext && !!document.documentMode) {
+      document.querySelector("html").classList.add("isIE11");
+      var script = document.createElement('script');
+      script.onload = function () {
+        svg4everybody();
+      };
+      script.src = "scripts/svg4everybody.js";
+      document.body.appendChild(script);
+    }
+  </script>
+  <script src='scripts/baron.min.js?new' defer></script>
+  <script src='scripts/additional.min.js?new1' defer></script>
+  <script src="scripts/svg.min.js?new" defer></script>
+  <script src="scripts/core.min.js?new1" defer></script>
+  <script>
+    window.addEventListener("load", function () {
+      setTimeout(function () {
+        var script = document.createElement('script');
+        script.src = "scripts/canvg.min.js";
+        document.body.appendChild(script);
+      }, 5000);
+    });
+  </script>
+
+  <link rel="stylesheet" type="text/css"
+    href="./ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+  <script src="./ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+  
+  
+</body>
+
+</html>
