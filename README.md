@@ -13,6 +13,11 @@ http://avatarmaker.luhui.net
 
 https://avatarmakers.netlify.app/
 
+
+http://avatarmaker.guanfu.org/
+
+
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/587c2d01-33a1-4904-bd91-37089373adb9/deploy-status)](https://app.netlify.com/sites/avatarmakers/deploys)
 此映像会自动更新以反映最新生产部署的当前状态。
 
@@ -20,12 +25,12 @@ https://avatarmakers.netlify.app/
 
 
 ## 鲁虺卡通头像设计绘制展示
-![鲁虺卡通头像设计](http://avatarmaker.luhui.net/鲁虺卡通头像设计avatarmaker.luhui.net截图_20220801074726.jpg)
+![鲁虺卡通头像设计](http://avatarmaker.guanfu.org/鲁虺卡通头像设计avatarmaker.luhui.net截图_20220801074726.jpg)
 
 
 
 ## 鲁虺卡通头像设计绘制展示
-![鲁虺卡通头像设计](http://avatarmaker.luhui.net/鲁虺卡通头像设计avatarmaker.luhui.net截图_20220801074753.jpg)
+![鲁虺卡通头像设计](http://avatarmaker.guanfu.org/鲁虺卡通头像设计avatarmaker.luhui.net截图_20220801074753.jpg)
 
 
 
